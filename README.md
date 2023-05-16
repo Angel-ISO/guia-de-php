@@ -19,7 +19,7 @@ Para lograr tales objetivos, se hace necesario identificar objetivos específico
 * Estudantes
 
 ## Custo
-> Apenas 02 kg de alimentos POR AULA
+> puedes tomarlo en tus tiempos libres.
 
 ## Local
 campus lands floridablanca.
@@ -29,10 +29,10 @@ campus lands floridablanca.
 
 
 
-## Visualizando os exemplos
+## Visualizando los ejemplos
 crear servidor [este tutorial básico](#servidor-web) y accede a la dirección ```http://localhost:9000/exemplos/``` en tu navegador.
 
-## Conteúdo (WIP)
+## Contenido (WIP)
  introducción de php
 * ¿Qué es?
 * ¿Como surgió?
@@ -134,7 +134,7 @@ PHPUnit
 ## ¿Qué es PHP?
 PHP (un acrónimo recursivo de PHP: preprocesador de hipertexto) es un lenguaje de secuencias de scripts [open source](http://git.php.net/) de uso general, muy utilizada, y especialmente adecuado para el desarrollo web y se puede incrustar en HTML.
 
-Por exemplo:
+Por ejemplo:
 
 ```php
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -167,7 +167,7 @@ Lee mas en:
 * [PHP Museum](http://museum.php.net/)
 * [Video: PHP Development History 2014](https://www.youtube.com/watch?v=ULjUgdxNaHg)
 
-## Popularidade
+## Popularidad
 
 PHP siempre ha sido muy popular entre [lenguajes de programación del lado del servidor](https://pt.wikipedia.org/wiki/Linguagem_server-side), hoy, el 81% de las páginas web usan PHP ([w3techs](http://w3techs.com/)). Los sitios web más famosos son:
 
@@ -189,11 +189,11 @@ PHP siempre ha sido muy popular entre [lenguajes de programación del lado del s
 
 > Fuente: [¿Cuáles son los 10 mejores sitios web creados con PHP?](http://www.quora.com/What-are-the-top-10-websites-built-with-PHP)
 
-# Preparando o Ambiente
+# Preparando el Ambiente
 
 Utilice siempre la última versión estable de PHP debido a la gran cantidad de funciones y correcciones que se han agregado a lo largo de los años. Actualmente estamos en versión [PHP 5.6](http://php.net/downloads.php).
 
-## Instalando no Windows
+## Instalando en Windows
 Descarga los archivos binarios (.zip) [esta  página](http://windows.php.net/download/) y descomprímelos en la carpeta ```c:\php56``` desde tu computadora. revisa esa carpeta existe  ```c:\php56\php.exe```.Ahora agreguemos PHP a la variable de entorno. [PATH](http://www.windows-commandline.com/set-path-command-line/). escribir [Comando](https://pt.wikipedia.org/wiki/Prompt_de_comando) (ou CMD) el siguiente comando y presione ```ENTER```:
 
 ```shell
@@ -201,7 +201,7 @@ setx path "%path%;c:\php56"
 ```
 
 Si no es muy bueno con la línea de comandos, consulte [este tutorial](https://www.java.com/en_US/download/help/path.xml) ya que muestra cómo agregar una ruta a el entorno variable PATH.
-## Instalando no Linux
+## Instalando en Linux
 
 La mejor manera de instalar PHP en una distribución de Linux basada en Unix es usar un [generador de paquetes](https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Linux_distributions). Esto dependerá de la distribución de Linux que esté utilizando. En Ubuntu, una de las distribuciones más populares, la instalarás a través del administrador de paquetes ```apt```. Simplemente escriba el comando a continuación y[asegúrese de que se haya instalado correctamente](#verificando-a-instalação).
 
@@ -224,7 +224,7 @@ $ brew install php55
 
 Ahora compruebe que PHP se ha instalado correctamente en el [tópico](#verificando-a-instalação) a seguir.
 
-## Verificando a instalação
+## Verificando la instalacion
 
 Para saber si PHP está correctamente instalado en su sistema operativo, escriba ```php -v``` en CMD (o Shell, para usuarios de Linux) y compruebe si obtiene una respuesta similar a esta:
 
@@ -246,7 +246,7 @@ Leer mas:
 
 ## Editores de Texto
 
-Durante nuestro curso, utilizaremos el [Atom.io](https://atom.io/) como editor de texto para crear nuestros scripts PHP. Es un editor de código abierto y fue desarrollado por el equipo de [Github](https://github.com/).Hacer [aqui](https://atom.io/) descarga el binario e instálalo en tu computadora de acuerdo a tu sistema operativo.
+Durante nuestro curso, utilizaremos el [Atom.io](https://atom.io/) como editor de texto para crear nuestros scripts PHP. Es un editor de código abierto y fue desarrollado por el equipo de [Github](https://github.com/).Hacer [aqui](https://atom.io/) descarga el binario e instálalo en tu computadora de acuerdo a tu sistema operativo, si es de tu preferencia tambien puedes usar visual studio code.
 
 ![Atom.io Logo](imgs/atom_logo.png)
 
@@ -320,7 +320,7 @@ Abra este link [http://localhost:9000/helloworld.php](http://localhost:9000/exem
 ## phpinfo
 > Muestra una gran cantidad de información sobre el estado actual de PHP. Esto incluye información sobre las opciones y extensiones de compilación de PHP, la versión de PHP, la información del servidor y el entorno (si se compila como un módulo), el entorno de PHP, la información de la versión del sistema operativo, las rutas, los valores clave y las ubicaciones de las opciones de compilación, configuración, encabezados HTTP y la licencia de PHP.
 
-**Exemplo - phpinfo()**
+**Ejemplo - phpinfo()**
 ```php
 <?php
 
@@ -355,9 +355,9 @@ $variavel = 50 === '50' // false
 $variavel = null;
 ```
 
-PHP es un [lenguaje mal escrito](https://pt.wikipedia.org/wiki/Linguagem_tipada), por lo tanto, no especifica el tipo de variable, solo le asigna un valor. Los idiomas con esta característica le permiten cambiar los tipos de datos contenidos en una variable durante la ejecución del programa.
+PHP es un [lenguaje fuertemente tipado ](https://pt.wikipedia.org/wiki/Linguagem_tipada), por lo tanto, no especifica el tipo de variable, solo le asigna un valor. Los idiomas con esta característica le permiten cambiar los tipos de datos contenidos en una variable durante la ejecución del programa.
 
-PHP admite ocho [tipos primitivos](http://php.net/manual/pt_BR/language.types.intro.php): ```String```, ```Integer```, ```Boolean```, ```Float```, ```Array```, ```Object```, ```Resource``` e ```NULL```.
+PHP admite ocho [tipos primitivos](http://php.net/manual/pt_BR/language.types.intro.php): ```String```, ```Integer```, ```Boolean```, ```Float```, ```Array```, ```Object```, ```Resource``` y ```NULL```.
 
 ## Strings
 
@@ -366,37 +366,37 @@ PHP admite ocho [tipos primitivos](http://php.net/manual/pt_BR/language.types.in
 ```php
 <?php
 
-echo 'Essa é uma string simples';
+echo 'Esta es una cadena simple';
 
-echo 'Além disso, você pode embarcar novas linhas
-nas strings, esse é um caminho
-legal de fazer';
+echo 'Además, podrás embarcar en nuevas líneas
+en cadenas, esta es una manera
+genial para hacer';
 
-// Arnold once said: "I'll be back"
-echo 'Arnold once said: "I\'ll be back"';
+// Arnold dijo una vez: "Volveré"
+echo 'Arnold dijo una vez: "Volveré"';
 
-// Isso não vai criar \n uma nova linha
-echo 'Isso não vai criar \n uma nova linha';
+// Esto no creará \n una nueva línea
+echo 'Esto no creará \n una nueva línea';
 
 $variavel = 'com';
-// Variáveis não funcionam $variavel com as simples
-echo 'Variáveis não funcionam $variavel com aspas simples';
+// Las variables no funcionan $variable con las simples
+echo 'Las variables no funcionan $variable con comillas simples';
 ```
 
-* Aspas Duplas
+*doble comillas- comillas dobles
 
 ```php
 <?php
 
 $variavel = 'Legal';
-// Variáveis funcionam assim: Legal
+// Las variables funcionan así: Cool
 echo "Variáveis funcionam assim: $variavel";
 ```
 
 ## Operadores de String
 Le permite concatenar o unir cadenas. En algunos idiomas el ```+``` juega este papel, pero en PHP ha sido reemplazado por ```ponto```.
 
-**Exemplo - Concatenação de Strings**
+**Ejemplo - Concatenacion de Strings**
 ```php
 <?php
 $a = "Hello ";
@@ -407,11 +407,11 @@ $a .= "World!";     // Agora $a contém a string "Hello World!"
 ?>
 ```
 
-Lea mas:
+Leer mas:
 * [php.net - String Operators](http://php.net/manual/en/language.operators.string.php)
 * [¿Por qué el operador de concatenación de cadenas php es un punto? (.)?](http://stackoverflow.com/questions/4266799/why-is-the-php-string-concatenation-operator-a-dot)
 
-## Integers
+## Integradores
 Un ```integer``` es un número que está contenido en ese intervalo ```Z = {..., -2, -1, 0, 1, 2, ...}```. Y se pueden representar en decimal (base 10), hexadecimal (base 16), octal (base 8) o binario (base 2). los signos de ```-``` o ```+``` son opcionales.
 
 Tipo        | Notación
@@ -422,7 +422,7 @@ Binário     | Número comienza com 0b
 
 > Los binarios literales enteros están disponibles en  ```PHP 5.4```.
 
-**Exemplo - Literales Internos**
+**Ejemplo - Literales Internos**
 ```php
 <?php
 $a = 1234; // decimal number
@@ -456,13 +456,13 @@ Un ```boolean``` representa el "valor de verdad" y puede ser ```TRUE``` o ```FAL
 **Exemplo**
 ```php
 <?php
-$foo = false; // assign the value FALSE to $foo
+$foo = false; // asigna el valor FALSO a $foo
 
-$foo = (50 == '50') // assign the value TRUE to $foo
-$foo = (50 != '50') // assign the value FALSE to $foo
+$foo = (50 == '50') // asigna el valor VERDADERO a $foo
+$foo = (50 != '50') // asigna el valor FALSO a $foo
 
-$foo = (50 !== '50') // assign the value TRUE to $foo
-$foo = (50 === '50') // assign the value FALSE to $foo
+$foo = (50 !== '50') // asigna el valor VERDADERO a $foo
+$foo = (50 === '50') // asigna el valor FALSO a $foo
 ```
 
 ## NULL
@@ -477,14 +477,14 @@ Se considera una variable ```null``` cuando:
 <?php
 $var = NULL;
 
-$texto = 'Foo Bar'; // $texto é uma string
-unset($texto); // $texto é NULL
+$texto = 'Foo Bar'; // $texto es un string
+unset($texto); // $texto es NULL
 ?>
 ```
 > Echa un vistazo a las funciones [is_null()](http://php.net/manual/en/function.is-null.php) y [unset()](http://php.net/manual/en/function.unset.php).
 
 ## Arrays
-Una matriz en PHP es en realidad un mapa ordenado. Un mapa es un tipo que relaciona valores con claves. Este tipo está optimizado de muchas maneras, por lo que puede usarlo como una matriz real o una lista (vector), tabla hash (que es una implementación de mapa), diccionario, colección, pila, cola y probablemente más. Como puede tener otra matriz PHP como valor, puede simular árboles fácilmente.
+Una array en PHP es en realidad un mapa ordenado. Un mapa es un tipo que relaciona valores con claves. Este tipo está optimizado de muchas maneras, por lo que puede usarlo como un array real o una lista (vector), tabla hash (que es una implementación de mapa), diccionario, colección, pila, cola y probablemente más. Como puede tener otro array PHP como valor, puede simular árboles fácilmente.
 
 **Sintaxe**
 ```
@@ -496,7 +496,7 @@ array(
 )
 ```
 
-**Exemplo - Array Simples**
+**Ejemplo - Array Simple**
 ```php
 <?php
 
@@ -647,18 +647,17 @@ Los operadores de comparación, como su nombre lo indica, le permiten comparar d
 
 Exemplo	  | Nome           | Resultado
 --------- | -------------- | ----------
-$a == $b  | Igual          | Verdadeiro (TRUE) se $a é igual a $b.
-$a === $b | Idêntico       | Verdadeiro (TRUE) se $a é igual a $b, e eles são do mesmo tipo (introduzido no PHP4).
-$a != $b  | Diferente      | Verdadeiro se $a não é igual a $b.
-$a <> $b  | Diferente      | Verdadeiro se $a não é igual a $b.
-$a !== $b	| Não idêntico   | Verdadeiro de $a não é igual a $b, ou eles não são do mesmo tipo (introduzido no PHP4).
-$a < $b	  | Menor que      | Verdadeiro se $a é estritamente menor que $b.
-$a > $b	  | Maior que      | Verdadeiro se $a é estritamente maior que $b.
-$a <= $b  | Menor ou igual | Verdadeiro se $a é menor ou igual a $b.
-$a >= $b	| Maior ou igual | Verdadeiro se $a é maior ou igual a $b.
+$a == $b  | Igual          | Verdadero (VERDADERO) si $a es igual a $b.
+$a === $b | Identico       | Verdadero (VERDADERO) si $a es igual a $b, y son del mismo tipo (introducido en PHP4).
+$a != $b  | Diferente      | Verdadero si $a no es igual a $b.
+$a <> $b  | Diferente      | Verdadero si $a no es igual a $b.
+$a !== $b	| no identico    | Verdadero de $a no es igual a $b, o no son del mismo tipo (introducido en PHP4).
+$a < $b	  | Menor que      | Verdadero si $a es estrictamente menor que $b.
+$a > $b	  | Mayor que      | Verdadero si $a es estrictamente mayor que $b.
+$a <= $b  | Menor o  igual | Verdadero si $a es menor o igual que $b.
+$a >= $b	| Mayor o  igual | Verdadero si $a es mayor o igual que $b.
 
-Se você comparar um inteiro com uma string, a string é [convertida para um número](http://php.net/manual/pt_BR/language.types.string.php#language.types.string.conversion). Se você comparar 2 strings numéricas, elas serão comparadas como inteiras. Estas regras também se aplicam ao comando switch.
-
+Si compara un entero con una cadena, la cadena es [convertida para un número](http://php.net/manual/pt_BR/language.types.string.php#language.types.string.conversion). Si compara 2 cadenas numéricas, se compararán como números enteros. Estas reglas también se aplican al comando cambiar.
 ```php
 <?php
 var_dump(0 == "a"); // 0 == 0 -> true
@@ -669,27 +668,27 @@ switch ("a") {
   case 0:
       echo "0";
       break;
-  case "a": // nunca é alcançado porque "a" já foi combinado com 0
+  case "a": //nunca se alcanza porque "a" ya se combinó con 0
       echo "a";
       break;
 }
 ?>
 ```
 
-Leia mais:
-* [php.net - Operadores de Comparação](http://php.net/manual/pt_BR/language.operators.comparison.php)
+Leer mas:
+* [php.net - Operadores de Comparacion](http://php.net/manual/pt_BR/language.operators.comparison.php)
 
 ## Operadores de Incremento/Decremento
-O PHP suporta operadores de pré e pós-incremento e decremento no estilo C.
+PHP admite operadores de incremento y decremento de estilo C previos y posteriores.
 
-Exemplo |	Nome            | Efeito
+Ejemplo |	Nombre          | resultado
 ------- | --------------- | -------
-++$a    | Pré-incremento	| Incrementa $a em um, e então retorna $a.
-$a++    | Pós-incremento	| Retorna $a, e então incrementa $a em um.
---$a    | Pré-decremento	| Decrementa $a em um, e então retorna $a.
-$a--    | Pós-decremento	| Retorna $a, e então decrementa $a em um.
+++$a    | Pre-incremento	| Incrementa $a en uno, luego devuelve $a.
+$a++    | Post-incremento	| Devuelve $a, luego incrementa $a en uno.
+--$a    | Pre-decremento	| Disminuye $a en uno, luego devuelve $a.
+$a--    | Post-decremento	| Devuelve $a, luego disminuye $a en uno.
 
-Leia mais:
+Leer mas:
 * [php.net – Operadores de Incremento/Decremento](http://php.net/manual/pt_BR/language.operators.increment.php)
 
 ## Outros Operadores
@@ -699,9 +698,9 @@ Leia mais:
 * [Operadores de Execução](http://php.net/manual/pt_BR/language.operators.execution.php)
 
 ## Constantes
-Uma constante é um identificador (nome) para um único valor. Como o nome sugere, esse valor não pode mudar durante a execução do script (exceção às [constantes mágicas](http://php.net/manual/pt_BR/language.constants.predefined.php), que não são constantes de verdade). As constantes são "case sensitive" (sensível ao tamanho de letras) por padrão. Por convenção, identificadores de constantes são sempre em maiúsculas.
+Una constante es un identificador (nombre) para un solo valor. Como sugiere el nombre, este valor no puede cambiar durante la ejecución del script (con la excepción de [constantes mágicas](http://php.net/manual/pt_BR/language.constants.predefined.php), que no son verdaderas constantes). Las constantes distinguen entre mayúsculas y minúsculas de forma predeterminada. Por convención, los identificadores constantes siempre están en mayúsculas.
 
-**Exemplo - Constantes válidas e inválidas**
+**Ejemplo - Constantes válidas e inválidas**
 ```php
 <?php
 
@@ -721,55 +720,54 @@ define("__FOO__", "something");
 ?>
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Constantes](http://php.net/manual/pt_BR/language.constants.php)
 
 ## Operadores Aritméticos
 
-Exemplo |	Nome          | Resultado
-------- | ------------- | ---------
--$a	    | Negação	      | Oposto de $a.
-$a + $b	| Adição        |	Soma de $a e $b.
-$a - $b	| Subtração     |	Diferença entre $a e $b.
-$a * $b	| Multiplicação |	Produto de $a e $b.
-$a / $b	| Divisão	      | Quociente de $a por $b.
-$a % $b	| Módulo	      | Resto de $a dividido por $b.
+Exemplo |	Nome            | Resultado
+------- | -------------   | ---------
+-$a	    | Negacion	      | Opuesto de $a.
+$a + $b	| Adicion         |	Suma de $a y $b.
+$a - $b	| Subtracion      |	Diferencia entre $a y $b.
+$a * $b	| Multiplicacion  |	Producto de $a y $b.
+$a / $b	| Division	      | Cociente de $a por $b.
+$a % $b	| Módulo	        | Resto de $a dividido por $b.
 
-> O operador de divisão ```/``` sempre retorna um valor ponto flutuante, a não ser que os dois operadores sejam inteiros
+> El operador de división ```/``` siempre devuelve un valor de punto flotante a menos que ambos operadores sean números enteros
 
-O PHP possui inúmeras [funções matemáticas](http://php.net/manual/pt_BR/ref.math.php), como por exemplo:
+PHP tiene numerosas [funciones matemáticas](http://php.net/manual/pt_BR/ref.math.php), como por ejemplo:
 
 ```php
 <?php
 print pi();        // 3.1415926535898 "Valor de PI"
-print ceil(5.4);   // 6 "Arredonda para cima"
+print ceil(5.4);   // 6 "redondeo"
 print hypot(3, 4); // 5 "Calcula a Hipotenusa"
 print max([50, 550, 40, 45, 44]); // 550 "Encontra o valor máximo"
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Operadores Aritméticos](http://php.net/manual/pt_BR/language.operators.arithmetic.php)
-* [php.net - Funções matemáticas](http://php.net/manual/pt_BR/ref.math.php)
+* [php.net - Funciones matemáticas](http://php.net/manual/pt_BR/ref.math.php)
 
 ## Operadores Lógicos
 
-Exemplo     |	Nome  | Resultado
+Ejemplo     |	Nombre  | Resultado
 ----------- | ----- | ---------
-$a and $b	  | E	    | Verdadeiro (**TRUE**) se tanto $a quanto $b são verdadeiros.
-$a or $b	  | OU    |	Verdadeiro se $a ou $b são verdadeiros.
-$a xor $b   |	XOR   |	Verdadeiro se $a ou $b são verdadeiros, mas não ambos.
-! $a	      | NÃO	  | Verdadeiro se $a não é verdadeiro.
-$a && $b	  | E	    | Verdadeiro se tanto $a quanto $b são verdadeiros.
-$a \|\| $b	| OU	  | Verdadeiro se $a ou $b são verdadeiros.
-
-Leia mais:
+$a and $b	  | E	    | Verdadero (**TRUE**) si tanto $a como $b son verdaderos.
+$a or $b	  | OU    |	Verdadero si $a o $b es cierto.
+$a xor $b   |	XOR   |	Verdadero si $a o $b son verdaderos, pero no ambos.
+! $a	      | NÃO	  | Verdadero si $a no es cierto.
+$a && $b	  | E	    | Verdadero si tanto $a como $b son verdaderos.
+$a \|\| $b	| OU	  | Verdadero si $a o $b es cierto.
+Leer mas:
 * [php.net - Operadores Lógicos](http://php.net/manual/pt_BR/language.operators.logical.php)
 * [php.net - Precedência de Operadores](http://php.net/manual/pt_BR/language.operators.precedence.php)
 
-## Estruturas de controle
-Qualquer script PHP é construído por uma série de instruções. Uma instrução pode ser uma atribuição, uma chamada de função, um 'loop', uma instrução condicional, ou mesmo uma instrução que não faz nada (um comando vazio). Instruções geralmente terminam com um ponto e vírgula. Além disso, as instruções podem ser agrupados em um grupo de comandos através do encapsulamento de um grupo de comandos com chaves. Um grupo de comandos é uma instrução também.
+## Estruturas de control
+Cualquier script PHP está construido por una serie de instrucciones. Una declaración puede ser una asignación, una llamada de función, un 'bucle', una declaración condicional o incluso una declaración que no hace nada (una declaración vacía). Las declaraciones generalmente terminan con un punto y coma. Además, las declaraciones se pueden agrupar en un grupo de comandos encapsulando un grupo de comandos con llaves. Un grupo de comandos es también una instrucción.
 
-Essa é uma lista das estruturas de controle no PHP:
+Esta es una lista de estructuras de control en PHP:
 
 * if
 * else
@@ -788,7 +786,7 @@ Essa é uma lista das estruturas de controle no PHP:
 * include_once
 * goto
 
-Informações sobre cada uma delas podem ser encontradas [nessa página](http://php.net/manual/pt_BR/language.control-structures.php).
+Se puede encontrar información sobre cada uno de ellos. [nessa página](http://php.net/manual/pt_BR/language.control-structures.php).
 
 ## If Else
 
@@ -798,7 +796,7 @@ if ($a > $b)
   echo "a is bigger than b";
 ?>
 ```
-> As chaves ```{}``` não são obrigatórias quando a instrução possui apenas uma linha
+> Las chaves ```{}``` no son obligatorios cuando la declaración tiene una sola línea
 
 ```php
 <?php
@@ -808,7 +806,7 @@ if ($a > $b) {
 }
 ?>
 ```
-**Exemplo - Else**
+**Ejemplo - Else**
 ```php
 <?php
 if ($a > $b) {
@@ -818,9 +816,9 @@ if ($a > $b) {
 }
 ?>
 ```
-> A instrução ```else``` só é executada se a expressão de condição do ```if``` for FALSE, e se tiver qualquer expressão elseif - somente se eles também retornarem FALSE.
+> la instrucción ```else``` sólo se ejecuta si la expresión de condición de la ```if``` es FALSO, y si tiene expresiones elseif, solo si también devuelven FALSO.
 
-**Exemplo - Elseif**
+**Ejemplo - Elseif**
 ```php
 <?php
 if ($a > $b) {
@@ -833,13 +831,13 @@ if ($a > $b) {
 ?>
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - if](http://php.net/manual/pt_BR/control-structures.if.php)
 * [php.net - else](http://php.net/manual/pt_BR/control-structures.else.php)
 * [php.net - elseif/else if](http://php.net/manual/pt_BR/control-structures.elseif.php)
 
 ## For
-O loop for é o loop mais complexo no PHP. Ele tem comportamento semelhante ao C. A sintaxe do loop for é:
+El bucle for es el bucle más complejo de PHP. Tiene un comportamiento similar a C. La sintaxis del bucle for es:
 
 ```
 for (expr1; expr2; expr3)
@@ -881,12 +879,12 @@ for ($i = 1, $j = 0; $i <= 10; $j += $i, print $i, $i++);
 ?>
 ```
 
-É comum para muitos usuários iterar em arrays como no exemplo abaixo.
+Es común que muchos usuarios iteren sobre matrices como en el ejemplo a continuación.
 ```php
 <?php
 /*
- * Esta é uma array com alguns dados que devem ser modificados
- * durante a execuçao do loop for.
+ * Esta es una matriz con algunos datos que deben modificarse.
+ * durante una ejecucion do loop for.
  */
 $people = array(
   array('name' => 'Kalle', 'salt' => 856412),
@@ -899,18 +897,18 @@ for($i = 0; $i < count($people); ++$i) {
 ?>
 ```
 
-O PHP também suporta a sintaxe alternativa "dois pontos" para o loop for.
+PHP también admite la sintaxis alternativa de "dos puntos" para el bucle for.
 ```
 for (expr1; expr2; expr3):
     statement
     ...
 endfor;
 ```
-Leia mais:
+Leer mas:
 * [php.net - For](http://php.net/manual/pt_BR/control-structures.for.php)
 
 ## Foreach
-O ```foreach```permite interar arrays e objetos de uma maneira muito simples. Existem duas formas de utilizá-lo:
+O ```foreach```permite interar arrays e objetos de uma maneira mucho mas simple. Hay dos formas de usarlo:
 
 ```
 foreach (array_expression as $value)
@@ -921,7 +919,7 @@ foreach (array_expression as $key => $value)
     statement
 ```
 
-**Exemplo - Foreach**
+**Ejemplo - Foreach**
 ```php
 <?php
 $arr = array(1, 2, 3, 4);
@@ -936,7 +934,7 @@ Output
 ?>
 ```
 
-**Exemplo - Interando um range de 0 à 100**
+**Ejemplo - Interando un rango de 0 à 100**
 ```php
 <?php
 foreach (range(0, 100) as $numero) {
@@ -945,7 +943,7 @@ foreach (range(0, 100) as $numero) {
 ?>
 ```
 
-**Exemplo - Interando um MapList**
+**Ejemplo - Interando un MapList**
 ```php
 <?php
 $produtos = array(
@@ -955,18 +953,18 @@ $produtos = array(
 );
 
 foreach ($produtos as $produto) {
-  echo "Nome: {$produto['nome']}, Preço: {$produto['preco']}" . PHP_EOL;
+  echo "Nome: {$produto['nome']}, Precio: {$produto['precio']}" . PHP_EOL;
 }
 
 /*
-Nome: XBOX, Preço: 3999.9
-Nome: TV 50", Preço: 7500
-Nome: Celular Moto X, Preço: 820.5
+Nome: XBOX, Precio: 3999.9
+Nome: TV 50", Precio: 7500
+Nome: Celular Moto X, Precio: 820.5
 */
 ?>
 ```
 
-**Exemplo - Interando um MapList 2**
+**Ejemplo - Interando un MapList 2**
 ```php
 <?php
 $pessoa = ['nome' => 'João', 'idade' => 25];
@@ -980,11 +978,11 @@ idade: 25
 ?>
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Foreach](http://php.net/manual/pt_BR/control-structures.foreach.php)
 
 ## While
-Com uma sintaxe bem parecida com a linguagem C, ```while```é uma maneira simples de fazer loops:
+Con una sintaxis muy similar al lenguaje C, ```while```es una forma sencilla de hacer bucles:
 
 ```
 while (expr)
@@ -996,7 +994,7 @@ while (expr):
 endwhile;
 ```
 
-**Exemplo - Imprimindo de 1 à 10 com While**
+**Ejemplo - Imprimiendo de 1 a 10 con While**
 ```php
 <?php
 $i = 1;
@@ -1010,7 +1008,7 @@ while ($i <= 10) {
 ?>
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - While](http://php.net/manual/pt_BR/control-structures.while.php)
 
 ## Switch
@@ -1039,38 +1037,37 @@ switch ($i) {
 ?>
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Switch](http://php.net/manual/pt_BR/control-structures.switch.php)
 
 ## Operador Ternário
-Outro operador condicional é o operador "?:" (ou ternário). A expressão ```(expr1) ? (expr2) : (expr3)``` é avaliada para expr2 se expr1 é avaliada como TRUE, ou expr3 se expr1 é avaliada como FALSE.
-
+Otro operador condicional es el operador "?:" (o ternario). La expresion ```(expr1) ? (expr2) : (expr3)```se evalúa como expr2 si expr1 se evalúa como VERDADERO, o expr3 si expr1 se evalúa como FALSO.
 ```php
 <?php
 $idade = 21;
-echo $idade >= 18 ? 'É maior de idade' : 'É menor de idade';
+echo $idade >= 18 ? 'Eres mayor de edad' : 'Eres menor de edad';
 
 // outputs 'É maior de idade'
 ?>
 ```
-> Se o valor da primeira expressão é "TRUE" (non-zero), então, ele retorna o valor da segunda expressão. Caso a primeira expressão seja "FALSE", então, ele retornará o valor da terceira expressão.
+> Si el valor de la primera expresión es "VERDADERO" (distinto de cero), devuelve el valor de la segunda expresión. Si la primera expresión es "FALSO", devolverá el valor de la tercera expresión.
 
-Leia mais:
+Leer mas:
 [php.net - Operador Ternário](http://php.net/manual/pt_BR/language.operators.comparison.php#language.operators.comparison.ternary)
 
 ## Include / Require
-A instrução ```include``` inclui e avalia um arquivo específico.
+la instrucción ```include``` incluye y evalúa un archivo específico.
 
-Arquivos são incluidos baseado no caminho do arquivo fornecido ou, se não for especificado um caminho, o [include_path](http://php.net/manual/pt_BR/ini.core.php#ini.include-path) especificado. Se o arquivo não for encontrado no [include_path](http://php.net/manual/pt_BR/ini.core.php#ini.include-path), a instrução include vai então verificar se existe o arquivo no diretório onde o include é executado e no diretório atual para só depois falhar. O construtor do include irá emitir um warning se não localizar o arquivo; comportamento diferente do [require](http://php.net/manual/pt_BR/function.require.php), que irá emitir um fatal error.
+Los archivos se incluyen en función de la ruta del archivo proporcionada o, si no se especifica ninguna ruta, el[include_path](http://php.net/manual/pt_BR/ini.core.php#ini.include-path) especificado. Si el archivo no se encuentra en [include_path](http://php.net/manual/pt_BR/ini.core.php#ini.include-path), la declaración de inclusión luego verificará si el archivo existe en el directorio donde se ejecuta la inclusión y en el directorio actual, solo para fallar después. El constructor de inclusión emitirá una advertencia si no puede encontrar el archivo; comportamiento diferente a [require](http://php.net/manual/pt_BR/function.require.php), lo que arrojará un error fatal.
 
-**Exemplo - Usando o Include no PHP**
-* arquivo01.php
+**Ejemplo - Usando o Include en PHP**
+* archivo01.php
 
 ```php
 <?php
-$texto = 'Trabalhando com Include no PHP';
+$texto = 'Trabajando con Incluir en PHP';
 
-function dobrar($numero)
+function doblar($numero)
 {
   return $numero * 2;
 }
@@ -1083,31 +1080,31 @@ function dobrar($numero)
 
 include 'arquivo01.php';
 
-echo dobrar(4); // 8
-echo $texto; // Trabalhando com Include no PHP
+echo doblar(4); // 8
+echo $texto; // Trabajando con incude en PHP
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Include](http://php.net/manual/pt_BR/function.include.php)
 
-## Funções
-Uma função pode ser definida usando a seguinte sintaxe:
+## Funciones
+Una función se puede definir usando la siguiente sintaxis:
 ```php
 <?php
 
 function foo ($arg_1, $arg_2, /* ..., */ $arg_n)
 {
-  echo "Exemplo de função.\n";
+  echo "Ejemplo de funcion.\n";
   return $valor_retornado;
 }
 
 ?>
 ```
 
-Valores serão retornados se estiver usando a palavra ```return```. É possível retornar valores de qualquer tipo, incluindo Arrays e Objetos.
-> IMPORTANTE: Se não utilizar o ```return```, um valor **NULL** será retornado.
+Los valores serán devueltos si se usa la palabra ```return```. Puede devolver valores de cualquier tipo, incluidos Arrays y Objects.
+> IMPORTANTE: Si no utiliza el```return```, un valor **NULL** será retornado.
 
-**Exemplo - Retornando Valores**
+**Ejemplo - Retornando Valores**
 ```php
 <?php
 function square($num)
@@ -1118,19 +1115,19 @@ echo square(4);   // outputs '16'.
 ?>
 ```
 
-**Exemplo - Retornando Valores e Obtendo Multiplos Valores**
+**Ejemplo - Retornando Valores y Obtendo Multiplos Valores**
 ```php
 <?php
-function numeros_pequenos()
+function numeros_pequeños()
 {
   return array (0, 1, 2);
 }
-list ($zero, $um, $dois) = numeros_pequenos();
+list ($zero, $um, $dois) = numeros_pequeños();
 ?>
 ```
-> Veja a documentação da função [list()](http://php.net/manual/pt_BR/function.list.php).
+> Ver la documentación de la función [list()](http://php.net/manual/pt_BR/function.list.php).
 
-No PHP 7, será possível definir o tipo do valor retornado da função (como o exemplo abaixo). Veja essa e outras features do PHP 7 [nessa página](http://php.net/manual/en/migration70.new-features.php).
+En PHP 7, será posible definir el tipo de valor devuelto por la función (como el ejemplo a continuación). Vea esta y otras características de PHP 7 [nessa página](http://php.net/manual/en/migration70.new-features.php).
 ```php
 <?php
 function sum($a, $b): float
@@ -1142,12 +1139,12 @@ var_dump(sum(1, 2)); // outputs 'float(3)'
 ?>
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Funções definidas pelo usuário](http://php.net/manual/pt_BR/functions.user-defined.php)
 * [php.net - Retornando Valores](http://php.net/manual/en/functions.returning-values.php)
 
-## Valor de Argumento Padrão
-PHP permite que você especifique um valor padrão para os argumentos das funções, tornando-os opcionais.
+## Valor de Argumento Padre
+PHP le permite especificar un valor predeterminado para los argumentos de la función, haciéndolos opcionales.
 
 ```php
 <?php
@@ -1160,13 +1157,13 @@ echo makecoffee(null);
 echo makecoffee("espresso");
 ?>
 ```
-A saída para o trecho de código acima será:
+El resultado del fragmento de código anterior será:
 ```
-Making a cup of cappuccino.
-Making a cup of .
-Making a cup of espresso.
+Hacer una taza de capuchino.
+Haciendo una taza de .
+Hacer una taza de espresso.
 ```
-**Exemplo - Uso incorreto do argumento padrão**
+**Exemplo - Uso incorreto de argumento padre**
 ```php
 <?php
 function makeyogurt($type = "acidophilus", $flavour)
@@ -1177,14 +1174,14 @@ function makeyogurt($type = "acidophilus", $flavour)
 echo makeyogurt("raspberry");   // won't work as expected
 ?>
 ```
-O código acima retornará uma mensagem de error:
+El código anterior devolverá un mensaje de error:
 ```
-Warning: Missing argument 2 in call to makeyogurt() in
-/usr/local/etc/httpd/htdocs/phptest/functest.html on line 41
-Making a bowl of raspberry .
+Advertencia: Falta el argumento 2 en la llamada a makeyogurt() en
+/usr/local/etc/httpd/htdocs/phptest/functest.html en la línea 41
+Hacer un cuenco de frambuesa.
 ```
 
-**Exemplo - Uso correto do argumento padrão**
+**Ejemplo - Uso correto de argumento padre**
 ```php
 <?php
 function makeyogurt($flavour, $type = "acidophilus")
@@ -1195,18 +1192,18 @@ function makeyogurt($flavour, $type = "acidophilus")
 echo makeyogurt("raspberry");   // works as expected
 ?>
 ```
-A resposta do trecho de código acima será:
+La respuesta del fragmento de código anterior será:
 ```
-Making a bowl of acidophilus raspberry.
+Hacer un tazón de frambuesa acidófila.
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Default argument values](http://php.net/manual/en/functions.arguments.php)
 
-## Funções Anônimas (ou Closures)
-Permite criar funções sem especificar uma nome. Elas possuem diversas utilidades, porém são mais usadas como parâmetros ```callback``` para outras funções.
+## Funciones Anonimas (o Cierres)
+Le permite crear funciones sin especificar un nombre. Tienen muchos usos, pero se utilizan principalmente como parámetros de ```callbacks``` a otras funciones.
 
-**Exemplo - Função Anônima**
+**Ejemplo - Funcion Anonima**
 ```php
 <?php
 echo preg_replace_callback('~-([a-z])~', function ($match) {
@@ -1217,7 +1214,7 @@ echo preg_replace_callback('~-([a-z])~', function ($match) {
 ?>
 ```
 
-**Exemplo - Atribuindo uma função à uma variável**
+**Ejemplo - Asignar una función a una variable**
 ```php
 <?php
 $greet = function($name) {
@@ -1229,7 +1226,7 @@ $greet('PHP');
 ?>
 ```
 
-Você também pode incluir variáveis que estão fora do atual scopo da função. Para isso, utiliza-se a palavra ```use```, conforme exemplo abaixo:
+También puede incluir variables que están fuera del alcance actual de la función. Para hacer esto, use la palabra ```use```, como se muestra en el siguiente ejemplo:
 
 ```php
 <?php
@@ -1237,16 +1234,16 @@ Você também pode incluir variáveis que estão fora do atual scopo da função
 $mensagem = 'hello';
 
 // Sem "use"
-$exemplo = function () {
+$ejemplo = function () {
     var_dump($mensagem); // NULL
 };
-echo $exemplo();
+echo $ejemplo();
 
 // Com "use"
-$exemplo = function () use ($mensagem) {
+$ejemplo = function () use ($mensagem) {
     var_dump($mensagem); // string(5) "hello"
 };
-echo $exemplo();
+echo $ejemplo();
 
 ?>
 ```
@@ -1254,8 +1251,8 @@ echo $exemplo();
 Leia mais:
 * [php.net - Funções Anônimas](http://php.net/manual/pt_BR/functions.anonymous.php)
 
-## Sintaxe Alternativa para estruturas de controle
-O PHP oferece uma sintaxe alternativa para algumas estruturas de controle; a saber, ```if```, ```while```, ```for```, ```foreach```, e ```switch```. Em cada caso, basicamente a sintaxe alternativa é trocar a chave de abertura por dois pontos (:) e a chave de fechamento por ```endif;```, ```endwhile;```, ```endfor;```, ```endforeach;```, ou ```endswitch;```, respectivamente.
+## Sintaxis Alternativa para estruturas de control
+PHP ofrece una sintaxis alternativa para algunas estructuras de control; a saber, ```if```, ```while```, ```for```, ```foreach```, e ```switch```. En cada caso, básicamente la sintaxis alternativa de els es reemplazar la llave de apertura con dos puntos (:) y la llave de cierre con ```endif;```, ```endwhile;```, ```endfor;```, ```endforeach;```, o ```endswitch;```, respectivamente.
 
 ```php
 <?php if ($a == 5): ?>
@@ -1263,8 +1260,7 @@ A é igual a 5
 <?php endif; ?>
 ```
 
-A sintaxe alternativa também se aplica no else e elseif. A seguir um exemplo de um if com elseif e else no formato alternativo:
-```php
+La sintaxis alternativa también se aplica a else y elseif. El siguiente es un ejemplo de un if con elseif y else en formato alternativo:```php
 <?php
 if ($a == 5):
     echo "a equals 5";
@@ -1278,7 +1274,7 @@ endif;
 ?>
 ```
 
-**Exemplo - Sintaxe Alternativa Foreach**
+**Exemplo - Sintaxis Alternativa Foreach**
 ```php
 <?php
 foreach (range(0, 100) as $i => $number):
@@ -1287,36 +1283,35 @@ endforeach;
 ?>
 ```
 
-Leia mais:
-*  [php.net - Sintaxe Alternativa para estruturas de controle](http://php.net/manual/pt_BR/control-structures.alternative-syntax.php)
+Leer mas:
+*  [php.net - Sintaxis Alternativa para estruturas de control](http://php.net/manual/pt_BR/control-structures.alternative-syntax.php)
 
 ## Escapando o HTML
-Quando o PHP interpreta um arquivo, ele procura pelas **tags de abertura** e **fechamento**, as quais indicam para o PHP começar e parar de interpretar o código entre elas. Interpretar desta maneira permite ao PHP ser embutido em todos os tipos de documentos, já que tudo, fora o par de tags de abertura e fechamento é ignorado pelo interpretador do PHP. Na maioria das vezes você verá o PHP embutido em documentos HTML como neste exemplo.
+Cuando PHP analiza un archivo, busca el **tags de abertura** e **fechamento**, que le dicen a PHP que comience y deje de interpretar el código entre ellos. Interpretar de esta manera permite que PHP se incruste en todo tipo de documentos, ya que el intérprete de PHP ignora todo menos el par de etiquetas de apertura y cierre. La mayoría de las veces verá PHP incrustado en documentos HTML como en este ejemplo.
 
 ```php
-<p>Isto vai ser ignorado.</p>
-<?php echo 'Enquanto isto vai ser interpretado.'; ?>
-<p>Isto também vai ser ignorado.</p>
+<p>esto va a ser ignorado.</p>
+<?php echo 'Si bien esto será interpretado.'; ?>
+<p>esto tambien va a ser ignorado.</p>
 ```
 
-Existem diferentes maneiras de abrir e fechar um bloco de instruções PHP.
+Hay diferentes formas de abrir y cerrar un bloque de instrucciones PHP.
 
 ```php
 <?php
-    echo 'Isto é um teste';
+    echo 'esto es una prueba';
 ?>
 
-<?php echo 'Isto é um teste' ?>
+<?php echo 'esto es una prueba' ?>
 
-<?= 'Isto é um teste utilizando short echo tag' ?>
+<?= 'Esta es una prueba usando una etiqueta de eco corta' ?>
 
-<?php echo 'Nós omitimos a última tag de fechamento';
+<?php echo 'Omitimos la última etiqueta de cierre';
 ```
 
-> Note que não é necessário colocar um ```;``` quando você abre e fecha um bloco de instruções na mesma linha.
+> Tenga en cuenta que no es necesario colocar un ```;``` cuando abre y cierra un bloque de sentencias en la misma línea.
 
-Você também pode escapar utilizada expressões condicionais avançadas:
-
+También puedes escapar usando expresiones condicionales avanzadas:
 ```php
 <?php if ($expression == true): ?>
   This will show if the expression is true.
@@ -1325,16 +1320,16 @@ Você também pode escapar utilizada expressões condicionais avançadas:
 <?php endif; ?>
 ```
 
-Leia mais:
+Leer mas:
 * http://php.net/manual/en/language.basic-syntax.instruction-separation.php
 * http://php.net/manual/en/language.basic-syntax.phpmode.php
 
-# Orientação a Objetos
+# Orientado a Objetos
 
 ## Objetos
-Você pode converter uma variável ```array``` para o tipo ```object``` (e vise-versa), fazendo um "casting", dessa maneira:
+Puede convertir una variable ```array``` para o tipo ```object``` (y vise-versa), fazendo un "casting", de esta manera:
 
-**Exemplo - Convertendo array para object**
+**Ejemplo - Convertendo array a object**
 ```php
 <?php
 
@@ -1359,58 +1354,58 @@ object(stdClass)#2 (2) {
 */
 ```
 
-## Classe
-Toda definição de classe começa com a palavra-chave ```class```, seguido por um nome da classe, que pode ser qualquer nome que não seja uma palavra reservada no PHP, seguido por um par de chaves, que contém a definição dos membros e métodos da classe. Uma pseudo variável, ```$this```, está disponível quando um método é chamado dentro de um contexto de objeto. ```$this``` é uma referência para o objeto chamador do método (normalmente o objeto ao qual o método pertence). Isso é ilustrado no exemplo a seguir:
+## Clase
+Cada definición de clase comienza con la palabra clave```class```, sseguido de un nombre de clase, que puede ser cualquier nombre que no sea una palabra reservada en PHP, seguido de un par de llaves, que contienen la definición de los miembros y métodos de la clase. Una pseudovariable, ```$this```, está disponible cuando se llama a un método dentro de un contexto de objeto. ```$this``` es una referencia al objeto de llamada del método (generalmente el objeto al que pertenece el método). Esto se ilustra en el siguiente ejemplo:
 
-**Exemplo: Classe no PHP**
+**Ejemplo: Classe de PHP**
 ```php
 <?php
 
-class Pessoa
+class Persona
 {
 
-  private $nome;
-  private $sobrenome;
+  private $nombre;
+  private $sobrenombre;
 
-  public function __construct($nome, $sobrenome)
+  public function __construct($nombre, $sobrenombre)
   {
-    $this->nome = $nome;
-    $this->sobrenome = $sobrenome;    
+    $this->nombre = $nombre;
+    $this->sobrenombre = $sobrenombre;    
   }
 
-  public function getNomeCompleto()
+  public function getNombreCompleto()
   {
-    return $this->nome . ' ' . $this->sobrenome;
+    return $this->nombre . ' ' . $this->sobrenombre;
   }
 
   public function __destruct()
   {
-    echo 'Destruindo...';
+    echo 'Destruido...';
   }
 
 }
 
-$joao = new Pessoa('João', 'da Silva');
-echo $joao->getNomeCompleto(); // João da Silva
-unset($joao); // Destruindo...
+$joao = new Persona('angel', 'angelito');
+echo $joao->getNombreCompleto(); // angel  angelito
+unset($joao); // Destruido...
 
 ?>
 ```
-> Utiliza-se o operador de objeto ```->``` para acessar os atributos e métodos dos objetos.
+> Usar el operador de objeto ```->``` para acceder a los atributos y métodos de los objetos.
 
-Leia mais:
+Leer mas:
 * [php.net - O básico](http://php.net/manual/pt_BR/language.oop5.basic.php)
 
-### Visibilidade
-A visibilidade de uma propriedade ou método pode ser definida prefixando a declaração com as palavras-chave: 'public','protected' ou 'private'. Itens declarados como public podem ser acessados por todo mundo. Protected limita o acesso a classes herdadas (e para a classe que define o item). Private limita a visibilidade para apenas a classe que define o item.
+### Visibilidad
+La visibilidad de una propiedad o método se puede establecer anteponiendo la declaración con las palabras clave: 'público', 'protegido' o 'privado'. Todo el mundo puede acceder a los elementos declarados como públicos. Protected limita el acceso a las clases heredadas (ya la clase que define el elemento). Private limita la visibilidad solo a la clase que define el elemento.
 
-> Métodos de classe devem ser definidos com public, private, ou protected. Métodos sem qualquer declaração são definidas como public.
+>Los métodos de clase deben definirse con public, private o protected. Los métodos sin ninguna declaración se definen como públicos.
 
-**Exemplo: public, protected e private**
+**Ejemplo: public, protected and private**
 ```php
 <?php
 
-class NomeDaClasse
+class NombreDeClasse
 {
 
   public $atributoPublico = 'Público';
@@ -1426,7 +1421,7 @@ class NomeDaClasse
 
 }
 
-$instancia = new MinhaClasse();
+$instancia = new MyClasse();
 echo $instancia->atributoPublico; // OK
 echo $instancia->atributoProtegido; // Fatal Error
 echo $instancia->atributoPrivado; // Fatal Error
@@ -1434,16 +1429,15 @@ $instancia->metodoQualquer(); // PúblicoProtegidoPrivado
 
 ?>
 ```
-Leia mais:
+Leer mas:
 * [php.net - Visibilidade](http://php.net/manual/pt_BR/language.oop5.visibility.php)
 
 ## Método Estático
-O PHP também permite que você acesse os métodos estáticamente (sem utilizar o ```new```). Só precisa adicionar a palava chave ```static``` no assinatura do método, conforme ilustrado a seguir:
-
+PHP también le permite acceder a los métodos de forma estática. (sem utilizar o ```new```). Solo necesitas agregar la palabra clave ```static``` en la firma del método, como se muestra a continuación:
 ```php
 <?php
 
-class MinhaClasse
+class MiClasse
 {
 
   public function metodoNormal()
@@ -1458,27 +1452,26 @@ class MinhaClasse
 
 }
 
-MinhaClasse::metodoNormal(); // Error
-MinhaClasse::metodoEstático(); // Método Estático
+MiClasse::metodoNormal(); // Error
+MiClasse::metodoEstático(); // Método Estático
 
 $instancia = new MinhaClasse();
 $objeto->metodoNormal(); // Método normal
 $objeto->metodoEstatico(); // Método Estático
 ```
 
-Leia mais:
-* [php.net - Operador de Resolução de Escopo (::)](http://php.net/manual/pt_BR/language.oop5.paamayim-nekudotayim.php)
-* [php.net - Palavra-Chave 'static'](http://php.net/manual/pt_BR/language.oop5.static.php)
+Leer mas:
+* [php.net - Operador de Resolucion de Escopo (::)](http://php.net/manual/pt_BR/language.oop5.paamayim-nekudotayim.php)
+* [php.net - Palavra-Clave 'static'](http://php.net/manual/pt_BR/language.oop5.static.php)
 
-## Herança
-Em Orientação a Objetos, a classe que "extende" outra classe, herda todos os métodos e atributos da classe "pai", exceto os que tiverem o modificador de acesso "private". Em PHP, a herança de classes é feita utilizando a palavra chave ```extends``` seguido da classe "pai", conforme exemplo abaixo:
-
+## Herencia
+En Orientación a Objetos, la clase que "extiende" otra clase, hereda todos los métodos y atributos de la clase "padre", excepto aquellos con el modificador de acceso "privado". En PHP, la herencia de clases se realiza mediante la palabra clave ```extends``` seguido de la clase "padre", como se muestra a continuación:
 ```php
 <?php
 
 class Pai
 {
-  public $atributo = 'Atributo Qualquer';
+  public $atributo = 'Atributo Qualquiera';
 
   public function hello()
   {
@@ -1496,7 +1489,7 @@ class Filho extends Pai
 
 $filho = new Filho();
 $filho->hello(); // Hello World
-echo $filho->getAtributo(); // Atributo Qualquer
+echo $filho->getAtributo(); // Atributo Qualquiera
 
 $pai = new Pai();
 $pai->hello(); // Hello World
@@ -1504,13 +1497,13 @@ echo $pai->getAtributo(); // Error
 
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Extends](http://php.net/manual/pt_BR/language.oop5.inheritance.php)
 
-## Classe Abstrata
-Para definir uma classe como abstrata, apenas utilize a palavra ```abstract``` na assinatura da classe (conforme exemplo abaixo). A única diferença entre a classe abstrata e a concreta é que não é permitido ter uma instância (palavra chave ```new```) de uma classe abstrata.
+## Clase Abstrata
+Para definir una clase como abstracta, simplemente use la palabra ```abstract``` na assinatura da classe (conforme exemplo abaixo). la firma de la clase (como se muestra a continuación). La única diferencia entre la clase abstracta y la concreta es que no se permite tener una instancia (palavra clave ```new```) de una clase abstrata.
 
-**Exemplo - Classe Abstrata**
+**Ejemplo - Clase Abstrata**
 ```php
 <?php
 
