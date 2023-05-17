@@ -246,9 +246,9 @@ Leer mas:
 
 ## Editores de Texto
 
-Durante nuestro curso, utilizaremos el [visual studio code](https://visualstudiocode/) como editor de texto para crear nuestros scripts PHP. Es un editor de código abierto y fue desarrollado por el equipo de [microfotf](https://microsotf.com/).Hacer [aqui](https://microsotf/) descarga el binario e instalalo en tu computadora de acuerdo a tu sistema operativo, si es de tu preferencia tambien puedes usar visual studio code.
+Durante nuestro curso, utilizaremos el [visual studio code](https://visualstudiocode/) como editor de texto para crear nuestros scripts PHP. Es un editor de código abierto y fue desarrollado por el equipo de [microfotf](https://microsotf.com/).Hacer [aqui](https://microsotf/) descarga el binario e instalalo en tu computadora de acuerdo a tu sistema operativo, si es de tu preferencia tambien puedes usar otro entordo de programacion.
 
-![Atom.io Logo](/imgs/IM_VS%20Code%20-%20Icono.png)
+![visual studio code Logo](/imgs/IM_VS%20Code%20-%20Icono.png)
 
 ## Hello, World
 
@@ -257,7 +257,7 @@ Una vez que nuestro [ambiente de desenvolvimento está preparado](#preparando-o-
 ```shell
 $ php -r 'echo "Hello World";'
 ```
-> php -r 'code' (Ejecute código PHP sin etiquetas de script <?php..?>)
+> php -r 'code' (Ejecuta el código PHP sin etiquetas de script <?php..?>)
 
 Otra forma es crear un archivo. ```helloworld.php``` con el siguiente contenido:
 
@@ -266,7 +266,7 @@ Otra forma es crear un archivo. ```helloworld.php``` con el siguiente contenido:
 
 echo "Hello World";
 ```
-Para executar esse script no Terminal, digite:
+Para executar este script en Terminal, digite:
 
 ```shell
 $ php -f helloworld.php
@@ -355,7 +355,7 @@ $variavel = 50 === '50' // false
 $variavel = null;
 ```
 
-PHP es un [lenguaje fuertemente tipado ](https://pt.wikipedia.org/wiki/Linguagem_tipada), por lo tanto, no especifica el tipo de variable, solo le asigna un valor. Los idiomas con esta característica le permiten cambiar los tipos de datos contenidos en una variable durante la ejecución del programa.
+PHP no es un  [lenguaje  tipado ](https://pt.wikipedia.org/wiki/Linguagem_tipada), por lo tanto, no especifica el tipo de variable, solo le asigna un valor. Los idiomas con esta característica le permiten cambiar los tipos de datos contenidos en una variable durante la ejecución del programa.
 
 PHP admite ocho [tipos primitivos](http://php.net/manual/pt_BR/language.types.intro.php): ```String```, ```Integer```, ```Boolean```, ```Float```, ```Array```, ```Object```, ```Resource``` y ```NULL```.
 
@@ -388,9 +388,9 @@ echo 'Las variables no funcionan $variable con comillas simples';
 ```php
 <?php
 
-$variavel = 'Legal';
+$variable = 'Legal';
 // Las variables funcionan así: Cool
-echo "Variáveis funcionam assim: $variavel";
+echo "las Variables funcionan asi: $variable";
 ```
 
 ## Operadores de String
@@ -400,10 +400,10 @@ Le permite concatenar o unir cadenas. En algunos idiomas el ```+``` juega este p
 ```php
 <?php
 $a = "Hello ";
-$b = $a . "World!"; // Agora $b contém a string "Hello World!"
+$b = $a . "World!"; // Ahora $b contiene la cadena "Hello World!"
 
 $a = "Hello ";
-$a .= "World!";     // Agora $a contém a string "Hello World!"
+$a .= "World!";     // Ahora $a contiene la cadena "Hello World!"
 ?>
 ```
 
@@ -453,7 +453,7 @@ Leer mas:
 ## Booleans
 Un ```boolean``` representa el "valor de verdad" y puede ser ```TRUE``` o ```FALSE```. Para representarlo, usa las constantes **TRUE** o **FALSE**. Ambos no distinguen entre mayúsculas y minúsculas, es decir, no importa si está en mayúsculas o minúsculas (```True``` y igual a ```TRUE``` que es igual a ```true```).
 
-**Exemplo**
+**Ejemplo**
 ```php
 <?php
 $foo = false; // asigna el valor FALSO a $foo
@@ -545,11 +545,11 @@ $variavel = [
 
 ```
 
-**Exemplo - Accediendo Valores de un Array**
+**Ejemplo - Accediendo a Valores de un Array**
 ```php
 <?php
 
-$variavel = array(
+$variable = array(
   "somearray" => array(
     6 => 5,
     13 => 9,
@@ -557,9 +557,9 @@ $variavel = array(
   )
 );
 
-echo $variavel["somearray"][6];    // 5
-echo $variavel["somearray"][13];   // 9
-echo $variavel["somearray"]["a"];  // 42
+echo $variable["somearray"][6];    // 5
+echo $variable["somearray"][13];   // 9
+echo $variable["somearray"]["a"];  // 42
 ```
 
 **Exemplo - Type Casting and Overwriting**
@@ -612,9 +612,9 @@ Leer mas:
 * [php.net - Arrays](http://php.net/manual/pt_BR/language.types.array.php)
 
 ## Manipulando Arrays
-También puede modificar una matriz existente asignándole valores explícitamente.
+También puede modificar un array existente asignándole valores explícitamente.
 
-Esto se hace simplemente asignando valores a la matriz y especificando la clave entre corchetes. Puede omitir la llave encerrando un par de corchetes vacíos. ("[]").
+Esto se hace simplemente asignando valores al array y especificando la clave entre corchetes. Puede omitir la llave encerrando un par de corchetes vacíos. ("[]").
 
 ```
 $arr[chave] = valor;
@@ -627,22 +627,21 @@ $arr[] = valor;
 <?php
 $arr = array(5 => 1, 12 => 2);
 
-$arr[] = 56;    // Isto é o mesmo que $arr[13] = 56;
-                // nesse ponto do script
+$arr[] = 56;    // Esto es lo mismo que $arr[13] = 56;
+                // en este punto del script
 
-$arr["x"] = 42; // Isto acrescenta um novo elemento
-                // para o array com a chave "x"
+$arr["x"] = 42; // Esto añade un nuevo elemento.
+                // para matriz con clave "x"
 
-unset($arr[5]); // Isto remove um elemento do array
-
-unset($arr);    // E isto apaga todo o array
+unset($arr[5]); // Esto elimina un elemento del array.
+unset($arr);    // Y esto borra todo el array.
 ?>
 ```
 
 Leer mas:
 * [php.net - Arrays](http://php.net/manual/pt_BR/language.types.array.php)
 
-## Operadores de Comparação
+## Operadores de Comparacion
 Los operadores de comparación, como su nombre lo indica, le permiten comparar dos valores. Usted podría estar interesado en ver el [tabelas de comparação de tipos](http://php.net/manual/pt_BR/types.comparisons.php),que tiene un ejemplo de las diversas comparaciones entre tipos relacionados.
 
 Exemplo	  | Nome           | Resultado
@@ -844,16 +843,16 @@ for (expr1; expr2; expr3)
     statement
 ```
 
-Analise os seguintes exemplos. Todos exibem números de 1 até 10:
+Analise los siguientes ejemplos. Todos los números de visualización del 1 al 10:
 ```php
 <?php
-/* exemplo 1 */
+/* ejemplo 1 */
 
 for ($i = 1; $i <= 10; $i++) {
   echo $i;
 }
 
-/* exemplo 2 2 */
+/* ejemplo 2 2 */
 
 for ($i = 1; ; $i++) {
   if ($i > 10) {
@@ -862,7 +861,7 @@ for ($i = 1; ; $i++) {
   echo $i;
 }
 
-/* exemplo 3 */
+/* ejemplo 3 */
 
 $i = 1;
 for (; ; ) {
@@ -873,7 +872,7 @@ for (; ; ) {
   $i++;
 }
 
-/* exemplo 4 */
+/* ejemplo 4 */
 
 for ($i = 1, $j = 0; $i <= 10; $j += $i, print $i, $i++);
 ?>
@@ -883,7 +882,7 @@ Es común que muchos usuarios iteren sobre matrices como en el ejemplo a continu
 ```php
 <?php
 /*
- * Esta es una matriz con algunos datos que deben modificarse.
+ * Esta es un array con algunos datos que deben modificarse.
  * durante una ejecucion do loop for.
  */
 $people = array(
@@ -908,7 +907,7 @@ Leer mas:
 * [php.net - For](http://php.net/manual/pt_BR/control-structures.for.php)
 
 ## Foreach
-O ```foreach```permite interar arrays e objetos de uma maneira mucho mas simple. Hay dos formas de usarlo:
+O ```foreach```permite iterar arreglos y objetos de una manera mucho más simple. Hay dos formas de usarlo:
 
 ```
 foreach (array_expression as $value)
@@ -934,7 +933,7 @@ Output
 ?>
 ```
 
-**Ejemplo - Interando un rango de 0 à 100**
+**Ejemplo - Interando un rango de 0 a 100**
 ```php
 <?php
 foreach (range(0, 100) as $numero) {
@@ -947,9 +946,9 @@ foreach (range(0, 100) as $numero) {
 ```php
 <?php
 $produtos = array(
-  ['nome' => 'XBOX', 'preco' => 3999.90],
-  ['nome' => 'TV 50"', 'preco' => 7500.00],
-  ['nome' => 'Celular Moto X', 'preco' => 820.50],
+  ['nome' => 'XBOX', 'precio' => 3999.90],
+  ['nome' => 'TV 50"', 'precio' => 7500.00],
+  ['nome' => 'Celular Moto X', 'precio' => 820.50],
 );
 
 foreach ($produtos as $produto) {
