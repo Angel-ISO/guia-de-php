@@ -11,12 +11,12 @@ Para lograr tales objetivos, se hace necesario identificar objetivos específico
 * Ofrezca a los participantes condiciones para mejorar sus habilidades mediante la creación de aplicaciones prácticas y simplificadas.
 * Fortalecer el uso de buenas prácticas durante la programación.
 
-## Público Alvo
-* Desenvolvedores
+## Público de campus
+* desarrolladores
 * Analistas de Sistemas
-* Engenheiros de Software
-* Gerentes de Projeto
-* Estudantes
+* ingenieros de Software
+* Gerentes de Proyecto
+* Estudiantes
 
 ## Custo
 > puedes tomarlo en tus tiempos libres.
