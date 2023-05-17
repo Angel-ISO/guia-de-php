@@ -324,11 +324,11 @@ Abra este link [http://localhost:9000/helloworld.php](http://localhost:9000/exem
 ```php
 <?php
 
-// Mostra todas as informações, usa o padrão INFO_ALL
+// Muestra toda la información, usa INFO_ALL predeterminado
 phpinfo();
 
-// Mostra apenas informações dos módulos.
-// phpinfo(8) mostra um resultado identico.
+// Muestra solo la información del módulo.
+// phpinfo(8) muestra un resultado idéntico.
 phpinfo(INFO_MODULES);
 
 ?>
