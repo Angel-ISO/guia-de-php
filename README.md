@@ -60,7 +60,7 @@ PHP Orientado a Objetos
 * Pensamento Orientado a Objetos
 * Primeros Princípios
 * Classes vs Objetos
-* Creando classes
+* Creando clases
 * Atributos, Métodos e Assinaturas
 * Estendendo classes
 * Namespaces
@@ -203,7 +203,7 @@ setx path "%path%;c:\php56"
 Si no es muy bueno con la línea de comandos, consulte [este tutorial](https://www.java.com/en_US/download/help/path.xml) ya que muestra cómo agregar una ruta a el entorno variable PATH.
 ## Instalando en Linux
 
-La mejor manera de instalar PHP en una distribución de Linux basada en Unix es usar un [generador de paquetes](https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Linux_distributions). Esto dependerá de la distribución de Linux que esté utilizando. En Ubuntu, una de las distribuciones más populares, la instalarás a través del administrador de paquetes ```apt```. Simplemente escriba el comando a continuación y[asegúrese de que se haya instalado correctamente](#verificando-a-instalação).
+La mejor manera de instalar PHP en una distribución de Linux basada en Unix es usar un [generador de paquetes](https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Linux_distributions). Esto dependerá de la distribución de Linux que esté utilizando. En Ubuntu, una de las distribuciones más populares, la instalarás a través del administrador de paquetes ```apt```. Simplemente escriba el comando a continuación y[asegúrese de que se haya instalado correctamente](#verificando-la-instalacion).
 
 ```shell
 $ sudo apt-get install php5-cli
@@ -212,7 +212,7 @@ $ sudo apt-get install php5-cli
 
 ## Instalando en Mac OSX
 
-En el sistema operativo Macintosh, PHP ya está preinstalado, con mayor frecuencia en la versión ```5.4```. Antes de instalar, [compruebe si ya tiene PHP instalado](#verificando-a-instalação).Si no, la mejor manera de instalarlo en Mac OSX es usar el administrador de paquetes llamado ```Homebrew``` (O solo ```Brew```).
+En el sistema operativo Macintosh, PHP ya está preinstalado, con mayor frecuencia en la versión ```5.4```. Antes de instalar, [compruebe si ya tiene PHP instalado](#verificando-la-instalacion).Si no, la mejor manera de instalarlo en Mac OSX es usar el administrador de paquetes llamado ```Homebrew``` (O solo ```Brew```).
 
 > [Site do Homebrew](http://brew.sh/)
 
@@ -222,7 +222,7 @@ Una vez el ```Homebrew``` se instaló correctamente, simplemente escriba el sigu
 $ brew install php55
 ```
 
-Ahora compruebe que PHP se ha instalado correctamente en el [tópico](#verificando-a-instalação) a seguir.
+Ahora compruebe que PHP se ha instalado correctamente en el [tópico](#verificando-la-instalacion) a seguir.
 
 ## Verificando la instalacion
 
@@ -562,7 +562,7 @@ echo $variable["somearray"][13];   // 9
 echo $variable["somearray"]["a"];  // 42
 ```
 
-**Exemplo - Type Casting and Overwriting**
+**Ejemplo - Type Casting and Overwriting**
 ```php
 <?php
 $array = array(
@@ -582,7 +582,7 @@ array(1) {
 ?>
 ```
 
-**Exemplo - Mixed integer and string keys**
+**Ejemplo - Mixed integer and string keys**
 ```php
 <?php
 $array = array(
@@ -690,7 +690,7 @@ $a--    | Post-decremento	| Devuelve $a, luego disminuye $a en uno.
 Leer mas:
 * [php.net – Operadores de Incremento/Decremento](http://php.net/manual/pt_BR/language.operators.increment.php)
 
-## Outros Operadores
+## Otros Operadores
 * [Operadores de Atribuição](http://php.net/manual/pt_BR/language.operators.assignment.php)
 * [Operador Bit-a-bit](http://php.net/manual/pt_BR/language.operators.bitwise.php)
 * [Operadores de controle de erro](http://php.net/manual/pt_BR/language.operators.errorcontrol.php)
@@ -724,7 +724,7 @@ Leer mas:
 
 ## Operadores Aritméticos
 
-Exemplo |	Nome            | Resultado
+Ejemplo |	Nombre          | Resultado
 ------- | -------------   | ---------
 -$a	    | Negacion	      | Opuesto de $a.
 $a + $b	| Adicion         |	Suma de $a y $b.
@@ -751,14 +751,14 @@ Leer mas:
 
 ## Operadores Lógicos
 
-Ejemplo     |	Nombre  | Resultado
------------ | ----- | ---------
-$a and $b	  | E	    | Verdadero (**TRUE**) si tanto $a como $b son verdaderos.
-$a or $b	  | OU    |	Verdadero si $a o $b es cierto.
-$a xor $b   |	XOR   |	Verdadero si $a o $b son verdaderos, pero no ambos.
-! $a	      | NÃO	  | Verdadero si $a no es cierto.
-$a && $b	  | E	    | Verdadero si tanto $a como $b son verdaderos.
-$a \|\| $b	| OU	  | Verdadero si $a o $b es cierto.
+Ejemplo     |	Nombre | Resultado
+----------- | -----  | ---------
+$a and $b	  | AND    | Verdadero (**TRUE**) si tanto $a como $b son verdaderos.
+$a or $b	  | Or     |	Verdadero si $a o $b es cierto.
+$a xor $b   |	XOR    |	Verdadero si $a o $b son verdaderos, pero no ambos.
+! $a	      | NOT	   | Verdadero si $a no es cierto.
+$a && $b	  | &&	   | Verdadero si tanto $a como $b son verdaderos.
+$a \|\| $b	| Or	   | Verdadero si $a o $b es cierto.
 Leer mas:
 * [php.net - Operadores Lógicos](http://php.net/manual/pt_BR/language.operators.logical.php)
 * [php.net - Precedência de Operadores](http://php.net/manual/pt_BR/language.operators.precedence.php)
@@ -882,7 +882,7 @@ Es común que muchos usuarios iteren sobre matrices como en el ejemplo a continu
 ```php
 <?php
 /*
- * Esta es un array con algunos datos que deben modificarse.
+ * Este es un array con algunos datos que deben modificarse.
  * durante una ejecucion do loop for.
  */
 $people = array(
@@ -946,13 +946,13 @@ foreach (range(0, 100) as $numero) {
 ```php
 <?php
 $produtos = array(
-  ['nome' => 'XBOX', 'precio' => 3999.90],
-  ['nome' => 'TV 50"', 'precio' => 7500.00],
-  ['nome' => 'Celular Moto X', 'precio' => 820.50],
+  ['nombre' => 'XBOX', 'precio' => 3999.90],
+  ['nombre' => 'TV 50"', 'precio' => 7500.00],
+  ['nombre' => 'Celular Moto X', 'precio' => 820.50],
 );
 
 foreach ($produtos as $produto) {
-  echo "Nome: {$produto['nome']}, Precio: {$produto['precio']}" . PHP_EOL;
+  echo "Nombre: {$produto['nombre']}, Precio: {$produto['precio']}" . PHP_EOL;
 }
 
 /*
@@ -966,13 +966,13 @@ Nome: Celular Moto X, Precio: 820.5
 **Ejemplo - Interando un MapList 2**
 ```php
 <?php
-$pessoa = ['nome' => 'João', 'idade' => 25];
-foreach ($pessoa as $campo => $valor)
+$persona = ['nombre' => 'angek', 'edad' => 18];
+foreach ($persona as $campo => $valor)
   echo "{$campo}: {$valor}" . PHP_EOL;
 
 /*
-nome: João
-idade: 25
+nombre: angel
+edad: 18
 */
 ?>
 ```
@@ -1039,14 +1039,14 @@ switch ($i) {
 Leer mas:
 * [php.net - Switch](http://php.net/manual/pt_BR/control-structures.switch.php)
 
-## Operador Ternário
+## Operador Ternári-o
 Otro operador condicional es el operador "?:" (o ternario). La expresion ```(expr1) ? (expr2) : (expr3)```se evalúa como expr2 si expr1 se evalúa como VERDADERO, o expr3 si expr1 se evalúa como FALSO.
 ```php
 <?php
-$idade = 21;
-echo $idade >= 18 ? 'Eres mayor de edad' : 'Eres menor de edad';
+$edad = 21;
+echo $edad >= 18 ? 'Eres mayor de edad' : 'Eres menor de edad';
 
-// outputs 'É maior de idade'
+// outputs 'Es mayor de edad'
 ?>
 ```
 > Si el valor de la primera expresión es "VERDADERO" (distinto de cero), devuelve el valor de la segunda expresión. Si la primera expresión es "FALSO", devolverá el valor de la tercera expresión.
@@ -1064,7 +1064,7 @@ Los archivos se incluyen en función de la ruta del archivo proporcionada o, si 
 
 ```php
 <?php
-$texto = 'Trabajando con Incluir en PHP';
+$texto = 'Trabajando con Include en PHP';
 
 function doblar($numero)
 {
@@ -1080,7 +1080,7 @@ function doblar($numero)
 include 'arquivo01.php';
 
 echo doblar(4); // 8
-echo $texto; // Trabajando con incude en PHP
+echo $texto; // Trabajando con include en PHP
 ```
 
 Leer mas:
@@ -1230,25 +1230,25 @@ También puede incluir variables que están fuera del alcance actual de la funci
 ```php
 <?php
 
-$mensagem = 'hello';
+$mensaje = 'hello';
 
 // Sem "use"
 $ejemplo = function () {
-    var_dump($mensagem); // NULL
+    var_dump($mensaje); // NULL
 };
 echo $ejemplo();
 
 // Com "use"
-$ejemplo = function () use ($mensagem) {
-    var_dump($mensagem); // string(5) "hello"
+$ejemplo = function () use ($mensaje) {
+    var_dump($mensaje); // string(5) "hello"
 };
 echo $ejemplo();
 
 ?>
 ```
 
-Leia mais:
-* [php.net - Funções Anônimas](http://php.net/manual/pt_BR/functions.anonymous.php)
+Leer mas:
+* [php.net - Funciones Anonimas](http://php.net/manual/pt_BR/functions.anonymous.php)
 
 ## Sintaxis Alternativa para estruturas de control
 PHP ofrece una sintaxis alternativa para algunas estructuras de control; a saber, ```if```, ```while```, ```for```, ```foreach```, e ```switch```. En cada caso, básicamente la sintaxis alternativa de els es reemplazar la llave de apertura con dos puntos (:) y la llave de cierre con ```endif;```, ```endwhile;```, ```endfor;```, ```endforeach;```, o ```endswitch;```, respectivamente.
@@ -1285,8 +1285,8 @@ endforeach;
 Leer mas:
 *  [php.net - Sintaxis Alternativa para estruturas de control](http://php.net/manual/pt_BR/control-structures.alternative-syntax.php)
 
-## Escapando o HTML
-Cuando PHP analiza un archivo, busca el **tags de abertura** e **fechamento**, que le dicen a PHP que comience y deje de interpretar el código entre ellos. Interpretar de esta manera permite que PHP se incruste en todo tipo de documentos, ya que el intérprete de PHP ignora todo menos el par de etiquetas de apertura y cierre. La mayoría de las veces verá PHP incrustado en documentos HTML como en este ejemplo.
+## Escapando del HTML
+Cuando PHP analiza un archivo, busca el **tags de abertura** y **cierre**, que le dicen a PHP que comience y deje de interpretar el código entre ellos. Interpretar de esta manera permite que PHP se incruste en todo tipo de documentos, ya que el intérprete de PHP ignora todo menos el par de etiquetas de apertura y cierre. La mayoría de las veces verá PHP incrustado en documentos HTML como en este ejemplo.
 
 ```php
 <p>esto va a ser ignorado.</p>
@@ -1454,7 +1454,7 @@ class MiClasse
 MiClasse::metodoNormal(); // Error
 MiClasse::metodoEstático(); // Método Estático
 
-$instancia = new MinhaClasse();
+$instancia = new MiClasse();
 $objeto->metodoNormal(); // Método normal
 $objeto->metodoEstatico(); // Método Estático
 ```
@@ -1468,9 +1468,9 @@ En Orientación a Objetos, la clase que "extiende" otra clase, hereda todos los 
 ```php
 <?php
 
-class Pai
+class Padre
 {
-  public $atributo = 'Atributo Qualquiera';
+  public $atributo = 'Atributo cualquiera';
 
   public function hello()
   {
@@ -1478,7 +1478,7 @@ class Pai
   }
 }
 
-class Filho extends Pai
+class Hijo extends Padre
 {
   public function getAtributo()
   {
@@ -1486,13 +1486,13 @@ class Filho extends Pai
   }
 }
 
-$filho = new Filho();
-$filho->hello(); // Hello World
-echo $filho->getAtributo(); // Atributo Qualquiera
+$hijo = new hijo();
+$hijo->hello(); // Hello World
+echo $hijo->getAtributo(); // Atributo cualquiera
 
-$pai = new Pai();
-$pai->hello(); // Hello World
-echo $pai->getAtributo(); // Error
+$padre = new Padre();
+$padre->hello(); // Hello World
+echo $padre->getAtributo(); // Error
 
 ```
 
@@ -1500,15 +1500,15 @@ Leer mas:
 * [php.net - Extends](http://php.net/manual/pt_BR/language.oop5.inheritance.php)
 
 ## Clase Abstrata
-Para definir una clase como abstracta, simplemente use la palabra ```abstract``` na assinatura da classe (conforme exemplo abaixo). la firma de la clase (como se muestra a continuación). La única diferencia entre la clase abstracta y la concreta es que no se permite tener una instancia (palavra clave ```new```) de una clase abstrata.
+Para definir una clase como abstracta, simplemente use la palabra ```abstract``` una asignatura de clase (como ejemplo a continuación). la firma de la clase (como se muestra a continuación). La única diferencia entre la clase abstracta y la concreta es que no se permite tener una instancia (palavra clave ```new```) de una clase abstrata.
 
 **Ejemplo - Clase Abstrata**
 ```php
 <?php
 
-abstract class Pai
+abstract class Padre
 {
-  public $atributo = 'Atributo Qualquer';
+  public $atributo = 'Atributo cualquera';
 
   public function hello()
   {
@@ -1516,7 +1516,7 @@ abstract class Pai
   }
 }
 
-class Filho extends Pai
+class hijo extends Padre
 {
   public function getAtributo()
   {
@@ -1524,21 +1524,21 @@ class Filho extends Pai
   }
 }
 
-$filho = new Filho();
-$filho->hello(); // Hello World
-echo $filho->getAtributo(); // Atributo Qualquer
+$hijo = new hijo();
+$hijo->hello(); // Hello World
+echo $hijo->getAtributo(); // Atributo cualquera
 
-$pai = new Pai(); // Fatal error: Cannot instantiate abstract class Pai
+$padre = new padre(); // Fatal error: Cannot instantiate abstract class Padre
 ```
 
 ## Método Abstrato
-É um método sem implementação, mas que obriga a classe "filha" a implementá-la. Importante é que a classe precisa ser abstrata se ela quiser ter pelo menos uma método abstrato. Veja a ilustração abaixo e entenda como funciona um método abstrato no PHP.
+Es un método sin implementación, pero obliga a la clase "hijo" a implementarlo. Importante es que la clase debe ser abstracta si quiere tener al menos un método abstracto. Vea la ilustración a continuación y comprenda cómo funciona un método abstracto en PHP.
 
 **Exemplo - Método Abstrato**
 ```php
 <?php
 
-abstract class Pai
+abstract class padre
 {
   abstract function fooBar();
 
@@ -1548,39 +1548,39 @@ abstract class Pai
   }
 }
 
-class Filho extends Pai
+class Filho extends padre
 {
   public function fooBar()
   {
-    echo 'É obrigatório implementar esse método!';
+    echo 'es obligatorio implementar este método!';
   }
 }
 ```
 
-Leia mais:
-* [php.net - Classes Abstratas](http://php.net/manual/pt_BR/language.oop5.abstract.php)
+Leer mas:
+* [php.net - Clases Abstratas](http://php.net/manual/pt_BR/language.oop5.abstract.php)
 
 ## Constantes de Objeto
-É possível definir constantes em cada classe como um atributo imutável. A diferença com as variáveis está no não uso do símbolo ```$```.
+Es posible definir constantes en cada clase como un atributo inmutable. La diferencia con las variables es la no utilización del símbolo ```$```.
 
-> O valor deve ser uma expressão constante, não podendo ser (por exemplo) uma variável, um membro de uma classe, o resultado de uma operação matemática, ou uma chamada de função.
+> El valor debe ser una expresión constante, no (por ejemplo) una variable, un miembro de una clase, el resultado de una operación matemática o una llamada de función.
 
-É possível também interfaces terem constantes. Veja na [documentação de interface](http://php.net/manual/pt_BR/language.oop5.interfaces.php) os exemplos.
+También es posible que las interfaces tengan constantes. ver en [documentacion de interface](http://php.net/manual/pt_BR/language.oop5.interfaces.php) los ejemplos.
 
-Leia mais:
+Leer mas:
 * [php.net - Contantes de Objeto](http://php.net/manual/pt_BR/language.oop5.constants.php)
 
 ## Namespaces
-Por definição, ```namespaces``` é uma maneira de encapsulamento de itens. No PHP, ele resolve basicamente dois problemas quando você utiliza bibliotecas ou re-usa projetos de terceiros:
+Por definicion, ```namespaces``` es una forma de encapsular elementos. En PHP, básicamente resuelve dos problemas cuando usa bibliotecas o reutiliza proyectos de terceros:
 
-1. Colisões entre nomes de classe/função/constante do seu projeto com as internas do PHP ou de terceiros.
-2. Permite que você crie um apelido curto para as classes/funções/constantes, melhorando a legibilidade do seu código.
+1. Colisiones entre los nombres de clase/función/constante de su proyecto con PHP o componentes internos de terceros.
+2. Le permite crear un alias corto para clases/funciones/constantes, mejorando la legibilidad de su código.
 
-O namespace funciona para classes (incluindo abstracts e traits), interfaces, functions e contants. Utiliza-se a palavra-chave ```namespace``` dentro do arquivo antes de qualquer código PHP.
+El espacio de nombres funciona para clases (incluidos resúmenes y rasgos), interfaces, funciones y constantes. Se utiliza la palabra clave ```namespace``` dentro del archivo antes de cualquier código PHP.
 
-**Exemplo - Sintaxe do Namespace**
+**Ejemplo - Sintaxis de Namespace**
 ```php
-arquivo: meu-projeto/app/Escola/Publica/Funcionario.php
+arquivo: my-projeto/app/Escola/Publica/Funcionario.php
 <?php
 
 namespace Escola\Publica;
@@ -1592,7 +1592,7 @@ public function calcularSalario() { /* ... */ }
 
 ?>
 
-arquivo: meu-projeto/app/Escola/Particular/Funcionario.php
+arquivo: my-projeto/app/Escola/Particular/Funcionario.php
 <?php
 
 namespace Escola\Particular;
@@ -1609,29 +1609,29 @@ arquivo: application.php
 
 $funcionario = new Escola\Particular\Funcionario();
 
-// Ou dessa maneira:
+// O de esta manera:
 use Escola\Particular\Funcionario;
 $funcionario = new Funcionario();
 
-// Você criar um apelido curto para a classe também:
+// También puede crear un apodo corto para la clase:
 use Escola\Particular\Funcionario as FuncParticular;
 $funcionario = new FuncParticular();
 
 ?>
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Namespace overview](http://php.net/manual/pt_BR/language.namespaces.rationale.php)
 * [php.net - Namespace definition](http://php.net/manual/pt_BR/language.namespaces.definition.php)
 
 ## Interfaces
-Interfaces de Objetos permite a criação de código que especifica quais métodos e variáveis uma classe deve implementar, sem ter que definir como esses métodos serão tratados.
+Las interfaces de objetos permiten la creación de código que especifica qué métodos y variables debe implementar una clase, sin tener que definir cómo se manejarán esos métodos.
 
-Interfaces são definidas usando a palavra-chave 'interface', da mesma maneira que uma classe comum, mas sem nenhum dos métodos ter seu conteúdo definido.
+Las interfaces se definen utilizando la palabra clave 'interfaz', como una clase ordinaria, pero sin que ninguno de los métodos tenga definido su contenido.
 
-Todos os métodos declarados em uma interface devem ser public, essa é a natureza de uma interface.
+Todos los métodos declarados en una interfaz deben ser públicos, esa es la naturaleza de una interfaz.
 
-**Exemplo - Interfaces**
+**Ejemplo - Interfaces**
 ```php
 <?php
 
@@ -1640,82 +1640,82 @@ interface TemplateInterface
   public function setVariable()
 }
 ```
-> Interfaces podem ser estendidas como classes, usando o operador [extends](http://php.net/manual/pt_BR/language.oop5.inheritance.php).
+> Las interfaces se pueden extender como clases, usando el operador [extends](http://php.net/manual/pt_BR/language.oop5.inheritance.php).
 
-### Implements
-Para implementar uma interface, o operador ~implements~ é usado. Todos os métodos na interface devem ser implementados na classe; não fazer isso resultará em um erro fatal. Classes podem implementar mais de uma interface se assim for desejado, separando cada interface com uma vírgula.
+### Implementar
+Para implementar una interfaz se utiliza el operador ~implements~. Todos los métodos de la interfaz deben implementarse en la clase; si no lo hace, se producirá un error fatal. Las clases pueden implementar más de una interfaz si lo desean, separando cada interfaz con una coma.
 
 ```php
 <?php
 interface Motor
 {
-  public function ligar();
+  public function manejar();
 }
 
 interface Volante
 {  
-  public function esquerda();
-  public function direita();
+  public function izquierda();
+  public function derecha();
 }
 
-class Automovel implements Motor, Volante
+class Automovil implements Motor, Volante
 {
-  public function ligar()
+  public function manejar()
   {
     /* Implementar... */
   }
 
-  public function esquerda()
+  public function izquierda()
   {
     /* Implementar... */
   }
 
-  public function direita()
+  public function derecha()
   {
     /* Implementar... */
   }
 }
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Interfaces de Objetos](http://php.net/manual/pt_BR/language.oop5.interfaces.php)
 
 ### Clonando Objetos
-Clona-se um objeto quando deseja ter uma cópia fiel de outro objeto, incluindo um novo endereço de memória. Para isso, utiliza-se a palavra-chave ```clone``` antes do nome do objeto, conforme exemplo abaixo:
+Un objeto se clona cuando desea tener una copia fiel de otro objeto, incluida una nueva dirección de memoria. Para hacer esto, use la palabra clave ```clone``` antes del nombre del objeto, como se muestra a continuación:
 
 ```php
 <?php
 
-class Pessoa
+class Persona
 {
-  public $nome;
+  public $nombre;
 
-  public function __construct($nome)
+  public function __construct($nombre)
   {
-    $this->nome = $nome;
+    $this->nombre = $nombre;
   }  
 }
 
-$joao = new Pessoa('joao');
+$angel = new Persona('angel');
 
-$naoCloneJoao = $joao; // Aponta para o mesmo endereço de memória de $joao
-$cloneJoao = clone $joao;
+$naoCloneangel = $angel; // Aponta para o mesmo endereço de memória de $joao
+$cloneJoao = clone $angel;
 
-$naoCloneJoao->nome = 'Joanete';
-$cloneJoao->nome = 'Juarez';
+$naoCloneangel->nombre = 'benito';
+$cloneJoao->nombre = 'Juarez';
 
-echo $joao->nome; // Joanete
-echo $naoCloneJoao->nome; // Joanete
-echo $cloneJoao->nome; // Juarez
+echo $joao->nombre; // benito
+echo $naoCloneangel->nombre; // benito
+echo $cloneangel->nombre; // Juarez
 
 ?>
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Clonando objetos](http://php.net/manual/pt_BR/language.oop5.cloning.php)
 
-### Traits
-Traits são mecanismos que ajudam a reutilização de código, e servem perfeitamente para resolver o problema da falta de herança múltipla.
+### rasgos
+Los rasgos son mecanismos que ayudan a la reutilización del código y sirven perfectamente para resolver el problema de la falta de herencia múltiple.
 
 ```php
 <?php
@@ -1743,17 +1743,17 @@ $ola->world();
 
 ```
 
-Leia mais:
-* [Blog Helio Costa - Traits em PHP. Herança Horizontal](http://hlegius.pro.br/post/traits-em-php.-heranca-horizontal.)
-* [Blog Thiago Belem - PHP 5.4 - Traits](http://blog.thiagobelem.net/php-5-4-traits/)
-* [php.net - Traits](http://php.net/traits)
+Leer mas:
+* [Blog Helio Costa - Traits em PHP. Herencia Horizontal](http://hlegius.pro.br/post/traits-em-php.-heranca-horizontal.)
+* [Blog Thiago Belem - PHP 5.4 - rasgos](http://blog.thiagobelem.net/php-5-4-traits/)
+* [php.net - rasgos](http://php.net/traits)
 
 ## Autoloading classes
-Muitos desenvolvedores ao desenvolver aplicações orientadas a objeto criam um arquivo PHP para cada definição de classe. Um dos maiores contratempos é ter de escrever uma longa lista de includes no início de cada script (um include para cada classe necessária).
+Muchos desarrolladores cuando desarrollan aplicaciones orientadas a objetos crean un archivo PHP para cada definición de clase. Uno de los mayores contratiempos es tener que escribir una larga lista de inclusiones al comienzo de cada secuencia de comandos (una inclusión para cada clase requerida).
 
-Para carregar o nosso autoloader vamos precisar usar a função ```spl_autoload_register()``` do PHP que irá registra uma classe e uma função na pilha de carregamento de arquivos, a documentação do PHP chama isso de "pilha de ```__autoload``` da SPL" para efeitos de nome vamos usar "pilha de arquivos". A pilha de arquivos precisa ser ativada para ser usada e a função ```spl_autoload_register()``` já faz isso por padrão, além disso se você estiver usando o ```__autoload()```, ```spl_autoload()``` ou ```spl_autoload_call()``` precisará registrar esta função com o ```spl_autoload_register()```, ele vai substituir todas as 3 que eu citei, ou seja, ao chamar o ```spl_autoload_register()``` elas param de funcionar.
+Para cargar nuestro cargador automático necesitaremos usar la función ```spl_autoload_register()``` del PHP que registrará una clase y una función en la pila de carga de archivos, la documentación de PHP lo llama la "pila de carga". ```__autoload``` da SPL" para fines de denominación, usaremos "file stack". La pila de archivos debe estar habilitada para ser utilizada y la función ```spl_autoload_register()``` ya hace esto por defecto, además si está usando el ```__autoload()```, ```spl_autoload()``` o ```spl_autoload_call()``` tendrá que registrar esta función con el ```spl_autoload_register()```, reemplazará a los 3 que mencioné, es decir, al llamar al ```spl_autoload_register()``` dejan de funcionar.
 
-Caso o arquivo carregado não exista ela vai retornar ```false```, caso exista retornará ```true```.
+Si el archivo cargado no existe, volverá ```false```, en caso que exista retornará ```true```.
 
 ```php
 <?php
@@ -1766,17 +1766,17 @@ spl_autoload_register("my_autoload");
 ?>
 ```
 
-Leia mais:
-* [WebDevBr - Definindo autoloader para múltiplos diretórios - Entendendo o padrão MVC na prática – Parte 03](http://www.webdevbr.com.br/blog/definindo-autoloader-para-multiplos-diretorios-entendendo-o-padrao-mvc-na-pratica-parte-03/)
+Leer mas:
+* [WebDevBr - Definindo autoloader para múltiples diretorios - Entender el patrón MVC en la práctica – Parte 03](http://www.webdevbr.com.br/blog/definindo-autoloader-para-multiplos-diretorios-entendendo-o-padrao-mvc-na-pratica-parte-03/)
 
 ## php.ini
-Arquivo de configuração do PHP. Ele permite configurar [diversas diretivas](http://php.net/manual/pt_BR/ini.list.php) da sua instalação do PHP. Conheça as principais diretivas acessando esse [link](http://php.net/manual/pt_BR/ini.core.php).
+Archivo de configuración PHP. Permite configurar [diversas diretivas](http://php.net/manual/pt_BR/ini.list.php) de su instalación de PHP. Descubre las principales directivas accediendo a este [link](http://php.net/manual/pt_BR/ini.core.php).
 
-Para saber onde está localizado o arquivo ```php.ini``` no seu sistema operacional, digite no shell (ou no prompt de comando) o seguinte comando:
+Para saber dónde se encuentra el archivo ```php.ini```En su sistema operativo, escriba en el shell (o símbolo del sistema) el siguiente comando:
 ```shell
 $ php --ini
 ```
-O resultado será algo parecido com isso:
+El resultado será algo como esto:
 ```shell
 Configuration File (php.ini) Path: /Users/jweber/.phpbrew/php/php-5.6.13/etc
 Loaded Configuration File:         /Users/jweber/.phpbrew/php/php-5.6.13/etc/php.ini
@@ -1784,36 +1784,36 @@ Scan for additional .ini files in: /Users/jweber/.phpbrew/php/php-5.6.13/var/db
 Additional .ini files parsed:      (none)
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Descrição das principais diretivas do php.ini](http://php.net/manual/pt_BR/ini.core.php)
 
-## Configurando o TimeZone
-Para configurar o timezone no PHP, existe dois principais caminhos:
+## Configurando la zona horaria
+Para configurar la zona horaria en PHP, hay dos formas principales:
 
-1. Em tempo de execução via script:
+1. En tiempo de ejecución a través de script:
 ```php
 <?php
 
-date_default_timezone_set('America/Bahia');
+date_default_timezone_set('America/santander');
 
 ?>
 ```
 
-2. Através do arquivo de configuração PHP (php.ini):
+2. A través del archivo de configuración de PHP(php.ini):
 ```
-  date.timezone = America/Bahia
+  date.timezone = America/santander
 ```
 
-> Desde o PHP5.1.0 (quando as funções de data e tempo foram reescritas), toda chamada a esse tipo de função irá gerar um **E_NOTICE** se a timezone não é válida, e/ou uma mensagem **E_WARNING** se estiver utilizando as configurações do sistema ou a variável de ambiente ```TZ```.
+> Desde PHP5.1.0 (cuando se reescribieron las funciones de fecha y hora), cada llamada a este tipo de función generará un **E_NOTICE** si la zona horaria no es válida y/o un mensaje **E_WARNING** si usa la configuración del sistema o la variable de entorno ```TZ```.
 
-Leia mais:
-* [php.net - Lista de Timezones suportados](http://php.net/manual/pt_BR/timezones.php)
-* [php.net - Configurações em execução](http://php.net/manual/pt_BR/datetime.configuration.php#ini.date.timezone)
+Leer mas:
+* [php.net - Lista de zonas horarias soportadas](http://php.net/manual/pt_BR/timezones.php)
+* [php.net - configuración de ejecución](http://php.net/manual/pt_BR/datetime.configuration.php#ini.date.timezone)
 
-## Manipulando datas no PHP
-Trabalhar com datas no PHP é uma tarefa muito simples, a classe nativa ```DateTime``` permite fazer coisas incríveis. Veja os exemplos a seguir:
+## Manipulando fechas en PHP
+Trabajar con fechas en PHP es una tarea muy sencilla, la clase nativa ```DateTime``` te permite hacer cosas increíbles. Vea los ejemplos a continuación:
 
-**Exemplo - Criando uma data a partir de uma string**
+**Ejemplo - Creando fechas a partir de un string**
 ```php
 <?php
 $d = DateTime::createFromFormat('m. d. Y', '09. 13. 2015');
@@ -1821,35 +1821,35 @@ echo $d->format('d/m/Y'); // 13/09/2015
 ?>
 ```
 
-**Exemplo - Adicionando e removendo intervalos**
+**Ejemplo - Adicionando y removendo intervalos**
 ```php
 <?php
 $d = DateTime::createFromFormat('m. d. Y', '09. 13. 2015');
 
-// Adiciona 1 mês e 2 dias.
+// Añade 1 mes y 2 días.
 echo $d->add(new DateInterval('P1M2D'))->format('d/m/Y'); // 19/12/2015
 
-// Remove 3 mêses e 25 dias.
+// Quita 3 meses y 25 días.
 echo $d->sub(new DateInterval('P3M25D'))->format('d/m/Y'); // 30/04/2015
 ?>
 ```
 
-**Exemplo - Criando datas a partir de linguagem natural**
+**Ejemplo - Creación de fechas a partir del lenguaje natural**
 ```php
 <?php
 $d = (new DateTime())->modify('last day of this month');
 echo $d->format('d/m/Y'); // 30/09/2015
 ```
 
-Leia mais:
+Leer mas:
 * [php.net - Classe DateTime](http://php.net/manual/en/class.datetime.php)
 
-## Filtrando Valores do Usuário
-Em breve.
+## Filtrando Valores de Usuário
+en breve lo publicaremos.
 
-Leia mais:
+Leer mas:
 * [php.net - Data Filtering](http://www.phptherightway.com/#data_filtering)
 
-## Referências
-[php.net - Site oficial do PHP](php.net)  
+## Referencias
+[php.net - Site oficial de PHP](php.net)  
 [PHP The Right Way](phptherightway.com)
