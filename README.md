@@ -58,17 +58,17 @@ PHP Básico.
 
 PHP Orientado a Objetos
 * Pensamento Orientado a Objetos
-* Primeiros Princípios
+* Primeros Princípios
 * Classes vs Objetos
-* Criando classes
+* Creando classes
 * Atributos, Métodos e Assinaturas
 * Estendendo classes
 * Namespaces
 * Modificadores de acesso
 * Polimorfismo
 * Encapsulamento
-* Criando e entendendo interfaces
-* Criando classes e métodos abstratos
+* Creando e entendendo interfaces
+* Creando classes e métodos abstratos
 * Traits
 
 PSRs (1, 2, 3 e 4)
@@ -246,9 +246,9 @@ Leer mas:
 
 ## Editores de Texto
 
-Durante nuestro curso, utilizaremos el [Atom.io](https://atom.io/) como editor de texto para crear nuestros scripts PHP. Es un editor de código abierto y fue desarrollado por el equipo de [Github](https://github.com/).Hacer [aqui](https://atom.io/) descarga el binario e instálalo en tu computadora de acuerdo a tu sistema operativo, si es de tu preferencia tambien puedes usar visual studio code.
+Durante nuestro curso, utilizaremos el [visual studio code](https://visualstudiocode/) como editor de texto para crear nuestros scripts PHP. Es un editor de código abierto y fue desarrollado por el equipo de [microfotf](https://microsotf.com/).Hacer [aqui](https://microsotf/) descarga el binario e instalalo en tu computadora de acuerdo a tu sistema operativo, si es de tu preferencia tambien puedes usar visual studio code.
 
-![Atom.io Logo](imgs/atom_logo.png)
+![Atom.io Logo](/imgs/IM_VS%20Code%20-%20Icono.png)
 
 ## Hello, World
 
