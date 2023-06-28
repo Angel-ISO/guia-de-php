@@ -527,7 +527,7 @@ array(6) {
 
 el ```chave``` puede ser un número entero o una cadena. Si el```chave``` es una representación estándar de un número entero, se interpretará así (por ejemplo, "8" se interpretará como 8, mientras que "08" se interpretará como "08"). Los índices de tipo ```float``` será truncado a ```integer```. No hay diferencia entre matrices indexadas y asociativas en PHP, solo un tipo de matriz, que puede tener índices de tipo ```integer``` o ```string```.
 
-**Exemplo - Claves como cadena**
+**Ejemplo - Claves como cadena**
 
 ```php
 <?php
